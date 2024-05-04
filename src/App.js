@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import BotCollection from './components/BotCollection';
 import YourBotArmy from './components/YourBotArmy';
-import './App.css'
-
+import SortBar from './components/SortBar';
 
 const App = () => {
   const [bots, setBots] = useState([]);
@@ -17,7 +16,13 @@ const App = () => {
   }, []);
 
   const enlistBot = (bot) => {
-    setArmy(prevArmy => [...prevArmy, bot]);
+    // Check if a bot of the same class is already in the army
+    const isBotAlreadyEnlisted = army.some(b => b.bot_class === bot.bot_class);
+    if (!isBotAlreadyEnlisted) {
+      setArmy(prevArmy => [...prevArmy, bot]);
+    } else {
+      console.log('Cannot enlist another bot of the same class.');
+    }
   };
 
   const releaseBot = (bot) => {
@@ -32,8 +37,9 @@ const App = () => {
   return (
     <div className="app">
       <h1>Bot Battlr</h1>
-      <BotCollection bots={bots} enlistBot={enlistBot} />
+      <SortBar />
       <YourBotArmy army={army} releaseBot={releaseBot} dischargeBot={dischargeBot} />
+      <BotCollection bots={bots} enlistBot={enlistBot} />
     </div>
   );
 };
