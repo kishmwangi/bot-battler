@@ -1,18 +1,25 @@
 /* styles.css */
 
-/* App container */
-.app {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+/* SortBar */
+.sort-bar {
   display: flex;
-  flex-direction: column; /* Align children vertically */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-/* Heading */
-h1 {
-  text-align: center;
+.sort-bar button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sort-bar button:hover {
+  background-color: #0056b3;
 }
 
 /* Your Bot Army */
@@ -64,12 +71,14 @@ h1 {
 
 /* Bot Collection */
 .bot-collection {
-  flex: 1; /* Fill remaining space */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  grid-gap: 20px;
 }
 
 .bot-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
   grid-gap: 20px;
 }
 
