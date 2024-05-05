@@ -9,6 +9,7 @@ const App = () => {
   const [army, setArmy] = useState([]);
 
   useEffect(() => {
+    // Fetch bots data from backend
     fetch('http://localhost:3000/bots')
       .then(response => response.json())
       .then(data => setBots(data))
@@ -16,28 +17,31 @@ const App = () => {
   }, []);
 
   const enlistBot = (bot) => {
-    // Check if a bot of the same class is already in the army
-    const isBotAlreadyEnlisted = army.some(b => b.bot_class === bot.bot_class);
-    if (!isBotAlreadyEnlisted) {
-      setArmy(prevArmy => [...prevArmy, bot]);
-    } else {
-      console.log('Cannot enlist another bot of the same class.');
-    }
+    // Logic to enlist bot into the army
+    setArmy(prevArmy => [...prevArmy, bot]);
   };
 
   const releaseBot = (bot) => {
+    // Logic to release bot from the army
     setArmy(prevArmy => prevArmy.filter(b => b.id !== bot.id));
   };
 
   const dischargeBot = (bot) => {
-    // Logic to discharge bot from backend
+    // Logic to discharge bot from service
     // Then update state to remove it from army
+  };
+
+  const handleSort = (property) => {
+    // Logic to sort bots by the specified property (health, damage, or armor)
+    // Example: Sort bots by health
+    const sortedBots = [...bots].sort((a, b) => a[property] - b[property]);
+    setBots(sortedBots);
   };
 
   return (
     <div className="app">
       <h1>Bot Battlr</h1>
-      <SortBar />
+      <SortBar onSort={handleSort} />
       <YourBotArmy army={army} releaseBot={releaseBot} dischargeBot={dischargeBot} />
       <BotCollection bots={bots} enlistBot={enlistBot} />
     </div>
