@@ -20,7 +20,7 @@ h1 {
 
 .bot-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* Update to display in 5 columns */
   grid-gap: 20px;
 }
 
@@ -68,7 +68,7 @@ h1 {
 
 .army-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* Update to display in 5 columns */
   grid-gap: 20px;
 }
 
