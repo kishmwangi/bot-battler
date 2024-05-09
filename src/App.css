@@ -123,3 +123,13 @@ h1 {
 .bot-item button:hover {
   background-color: #c82333;
 }
+/* styles.css */
+
+/* Bot Collection */
+.bot-collection {
+  margin-bottom: 40px;
+  display: flex;
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Display in 4 columns */
+  grid-auto-rows: minmax(300px, auto); /* Set the height of each row */
+  grid-gap: 20px;
+}
