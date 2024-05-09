@@ -5,7 +5,7 @@ const BotCollection = ({ bots, enlistBot }) => {
   const handleEnlist = (bot) => {
     enlistBot(bot);
   };
-
+ //div creation 
   return (
     <div className="bot-collection">
       <h2>Bot Collection</h2>

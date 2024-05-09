@@ -5,7 +5,7 @@ const BotSpecs = ({ bot }) => {
   const handleEnlist = () => {
     // Logic to enlist the bot
   };
-
+ //specs div
   return (
     <div className="bot-specs">
       <h2>Bot Specs</h2>
