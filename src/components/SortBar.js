@@ -10,5 +10,6 @@ const SortBar = ({ onSort }) => {
     </div>
   );
 };
+//exporting sortbar
 
 export default SortBar;
