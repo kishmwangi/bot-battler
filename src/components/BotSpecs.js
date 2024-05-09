@@ -19,5 +19,6 @@ const BotSpecs = ({ bot }) => {
     </div>
   );
 };
+//exporting botspecs
 
 export default BotSpecs;
