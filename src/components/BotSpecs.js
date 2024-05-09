@@ -3,7 +3,7 @@ import React from 'react';
 
 const BotSpecs = ({ bot }) => {
   const handleEnlist = () => {
-    // Logic to enlist the bot
+    
   };
  //specs div
   return (

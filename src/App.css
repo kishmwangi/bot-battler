@@ -1,38 +1,26 @@
 /* styles.css */
 
-/* App container */
-.app {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Heading */
-h1 {
-  text-align: center;
-}
-
 /* Bot Collection */
 .bot-collection {
   margin-bottom: 40px;
-}
-
-.bot-cards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Update to display in 4 columns */
-  grid-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .bot-card {
+  flex: 1 0 calc(25% - 20px); /* Adjusted for 4 columns with gap */
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
-  cursor: pointer;
   background-color: #f0f0f0; /* Default background color */
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Apply different background colors to alternate bot cards */
+.bot-card:hover {
+  transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
 .bot-card:nth-child(even) {
   background-color: #e0e0e0; /* Light gray */
 }
@@ -67,69 +55,4 @@ h1 {
 
 .bot-card button:hover {
   background-color: #0056b3;
-}
-
-/* Your Bot Army */
-.your-bot-army {
-  margin-bottom: 40px;
-}
-
-.army-list {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Update to display in 4 columns */
-  grid-gap: 20px;
-}
-
-.bot-item {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #f0f0f0; /* Default background color */
-}
-
-/* Apply different background colors to alternate bot items */
-.bot-item:nth-child(even) {
-  background-color: #e0e0e0; /* Light gray */
-}
-
-.bot-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.bot-item h3 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  text-align: center; /* Center align the bot name */
-}
-
-.bot-item p {
-  margin: 5px 0;
-  text-align: center; /* Center align the bot description */
-}
-
-.bot-item button {
-  display: block;
-  margin: 10px auto 0;
-  padding: 8px 15px;
-  background-color: #dc3545;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.bot-item button:hover {
-  background-color: #c82333;
-}
-/* styles.css */
-
-/* Bot Collection */
-.bot-collection {
-  margin-bottom: 40px;
-  display: flex;
-  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Display in 4 columns */
-  grid-auto-rows: minmax(300px, auto); /* Set the height of each row */
-  grid-gap: 20px;
 }
