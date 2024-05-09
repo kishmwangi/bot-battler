@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+//sort bar
 const SortBar = ({ onSort }) => {
   return (
     <div className="sort-bar">
