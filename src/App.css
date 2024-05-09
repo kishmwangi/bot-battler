@@ -20,7 +20,7 @@ h1 {
 
 .bot-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Update to display in 4 rows */
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Update to display in 4 columns */
   grid-gap: 20px;
 }
 
@@ -65,9 +65,10 @@ h1 {
 .your-bot-army {
   margin-bottom: 40px;
 }
+
 .army-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Update to display in 4 rows */
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Update to display in 4 columns */
   grid-gap: 20px;
 }
 
