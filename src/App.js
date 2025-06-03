@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import BotCollection from './components/BotCollection';
 import YourBotArmy from './components/YourBotArmy';
 import SortBar from './components/SortBar';
+import './App.css';
 
 const App = () => {
   const [bots, setBots] = useState([]);
   const [army, setArmy] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  
 
   useEffect(() => {
     fetch('http://localhost:3001/bots')

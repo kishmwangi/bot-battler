@@ -89,6 +89,98 @@
       "armor": 13,
       "class": "Commander",
       "avatar_url": "https://robohash.org/kappabot.png?set=set2"
+    },
+
+ 
+    {
+      "id": 11,
+      "name": "Bot_11",
+      "health": 71,
+      "damage": 31,
+      "armor": 16,
+      "class": "Warrior",
+      "avatar_url": "https://robohash.org/bot11.png?set=set2"
+    },
+    {
+      "id": 12,
+      "name": "Bot_12",
+      "health": 72,
+      "damage": 32,
+      "armor": 17,
+      "class": "Assassin",
+      "avatar_url": "https://robohash.org/bot12.png?set=set2"
+    },
+    {
+      "id": 13,
+      "name": "Bot_13",
+      "health": 73,
+      "damage": 33,
+      "armor": 18,
+      "class": "Defender",
+      "avatar_url": "https://robohash.org/bot13.png?set=set2"
+    },
+    {
+      "id": 14,
+      "name": "Bot_14",
+      "health": 74,
+      "damage": 34,
+      "armor": 19,
+      "class": "Striker",
+      "avatar_url": "https://robohash.org/bot14.png?set=set2"
+    },
+    {
+      "id": 15,
+      "name": "Bot_15",
+      "health": 75,
+      "damage": 35,
+      "armor": 20,
+      "class": "Rogue",
+      "avatar_url": "https://robohash.org/bot15.png?set=set2"
+    },
+    {
+      "id": 16,
+      "name": "Bot_16",
+      "health": 76,
+      "damage": 36,
+      "armor": 5,
+      "class": "Tank",
+      "avatar_url": "https://robohash.org/bot16.png?set=set2"
+    },
+    {
+      "id": 17,
+      "name": "Bot_17",
+      "health": 77,
+      "damage": 37,
+      "armor": 6,
+      "class": "Support",
+      "avatar_url": "https://robohash.org/bot17.png?set=set2"
+    },
+    {
+      "id": 18,
+      "name": "Bot_18",
+      "health": 78,
+      "damage": 38,
+      "armor": 7,
+      "class": "Sniper",
+      "avatar_url": "https://robohash.org/bot18.png?set=set2"
+    },
+    {
+      "id": 19,
+      "name": "Bot_19",
+      "health": 79,
+      "damage": 39,
+      "armor": 8,
+      "class": "Scout",
+      "avatar_url": "https://robohash.org/bot19.png?set=set2"
+    },
+    {
+      "id": 20,
+      "name": "Bot_20",
+      "health": 80,
+      "damage": 40,
+      "armor": 9,
+      "class": "Commander",
+      "avatar_url": "https://robohash.org/bot20.png?set=set2"
     }
   ]
 }
