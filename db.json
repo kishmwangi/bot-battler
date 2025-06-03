@@ -1,0 +1,94 @@
+{
+  "bots": [
+    {
+      "id": 1,
+      "name": "AlphaBot",
+      "health": 100,
+      "damage": 25,
+      "armor": 10,
+      "class": "Warrior",
+      "avatar_url": "https://robohash.org/alphabot.png?set=set2"
+    },
+    {
+      "id": 2,
+      "name": "BetaBot",
+      "health": 80,
+      "damage": 35,
+      "armor": 5,
+      "class": "Assassin",
+      "avatar_url": "https://robohash.org/betabot.png?set=set2"
+    },
+    {
+      "id": 3,
+      "name": "GammaBot",
+      "health": 90,
+      "damage": 30,
+      "armor": 12,
+      "class": "Defender",
+      "avatar_url": "https://robohash.org/gammabot.png?set=set2"
+    },
+    {
+      "id": 4,
+      "name": "DeltaBot",
+      "health": 70,
+      "damage": 40,
+      "armor": 8,
+      "class": "Striker",
+      "avatar_url": "https://robohash.org/deltabot.png?set=set2"
+    },
+    {
+      "id": 5,
+      "name": "EpsilonBot",
+      "health": 60,
+      "damage": 50,
+      "armor": 4,
+      "class": "Rogue",
+      "avatar_url": "https://robohash.org/epsilonbot.png?set=set2"
+    },
+    {
+      "id": 6,
+      "name": "ZetaBot",
+      "health": 110,
+      "damage": 20,
+      "armor": 15,
+      "class": "Tank",
+      "avatar_url": "https://robohash.org/zetabot.png?set=set2"
+    },
+    {
+      "id": 7,
+      "name": "EtaBot",
+      "health": 95,
+      "damage": 28,
+      "armor": 9,
+      "class": "Support",
+      "avatar_url": "https://robohash.org/etabot.png?set=set2"
+    },
+    {
+      "id": 8,
+      "name": "ThetaBot",
+      "health": 85,
+      "damage": 32,
+      "armor": 7,
+      "class": "Sniper",
+      "avatar_url": "https://robohash.org/thetabot.png?set=set2"
+    },
+    {
+      "id": 9,
+      "name": "IotaBot",
+      "health": 75,
+      "damage": 38,
+      "armor": 6,
+      "class": "Scout",
+      "avatar_url": "https://robohash.org/iotabot.png?set=set2"
+    },
+    {
+      "id": 10,
+      "name": "KappaBot",
+      "health": 105,
+      "damage": 22,
+      "armor": 13,
+      "class": "Commander",
+      "avatar_url": "https://robohash.org/kappabot.png?set=set2"
+    }
+  ]
+}
