@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import BotCollection from './components/BotCollection';
 import YourBotArmy from './components/YourBotArmy';
 import SortBar from './components/SortBar';
@@ -11,20 +11,28 @@ const App = () => {
   const [error, setError] = useState(null);
 
   
+useEffect(() => {
+  const fetchBots = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/bots');
 
-  useEffect(() => {
-    fetch('http://localhost:3001/bots')
-      .then(response => response.json())
-      .then(data => {
-        setBots(data);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error('Error fetching bots:', error);
-        setError(error);
-        setLoading(false);
-      });
-  }, []);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      setBots(data);
+    } catch (err) {
+      console.error('Error fetching bots:', err);
+      setError(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchBots();
+}, []);
+
 
   const handleSort = (property) => {
     const sortedBots = [...bots].sort((a, b) => b[property] - a[property]);
